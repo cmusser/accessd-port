@@ -1,0 +1,21 @@
+#!/bin/sh
+#
+
+# PROVIDE: accessd
+# REQUIRE: DAEMON
+# KEYWORD: shutdown
+
+. /etc/rc.subr
+
+name=accessd
+rcvar=accessd_enable
+
+load_rc_config $name
+
+: ${accessd_enable="NO"}
+: ${accessd_pidfile="/var/run/${name}.pid"}
+
+command="/usr/local/bin/${name}"
+pidfile="${accessd_pidfile}"
+
+run_rc_command $*

@@ -1,0 +1,7 @@
+accessd allows clients to securely request temporary access to a
+system. The server manages the access by running a script that, in
+most cases, reconfigures the firewall. It then waits for a period of
+time, then runs the script again to unconfigure the firewall exception
+created earlier. Encryption of the requests is provided by NaCl.
+
+WWW: https://github.com/cmusser/accessd
