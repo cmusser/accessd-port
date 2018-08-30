@@ -1,4 +1,4 @@
-# Port for `accessd` and related utilities
+# Port for `accessd`
 
 This is the BSD Ports system configuration project for accessd.
 
@@ -15,11 +15,18 @@ This is the BSD Ports system configuration project for accessd.
    sudo make dports-create-shallow
    ```
 
-2. Bump the PORTVERSION in the Makefile to match the Git tag of the new version.
+2. Get rid of the old build directory:
 
-3. Run the following:
+   ```
+   sudo rm -rf /usr/obj/dports/src/accessd-port
+   ```
 
-    `sudo make makesum`
+3. Bump the DISTVERSION in the Makefile to match the Git tag of the new version.
+
+4. Run the following:
+    ```
+    sudo make makesum
+    ```
 
    This writes the distinfo file, which is in version control. Make
    sure you commit this when done.
@@ -35,18 +42,19 @@ This is the BSD Ports system configuration project for accessd.
    that's writable by a normal user. On FreeBSD, it's done in `work`
    in the current directory, so `sudo(8)` isn't needed.
 
-4. If the Rust crates have never been defined, or have changed, get the
+5. If the Rust crates have never been defined, or have changed, get the
    configuration for them by doing the following:
+   ```
+   make cargo-crates
+   ```
 
-   `make cargo-crates`
-	   
    Paste the result of this into the Makefile.
    
-5. Regenerate the `distinfo` file:
+6. Regenerate the `distinfo` file:
 
 	`sudo make makesum`
    
-4. Go through package building steps (these are taken from the FreeBSD
+7. Go through package building steps (these are taken from the FreeBSD
    Porters Handbook):
 
    ```
@@ -57,7 +65,7 @@ This is the BSD Ports system configuration project for accessd.
    sudo make install
    sudo make deinstall
    ```
-5. Install the built package:
+8. Install the built package:
    ```
    sudo pkg install /usr/obj/dports/src/accessd-port/pkg/accessd-1.0.0.txz
    ```

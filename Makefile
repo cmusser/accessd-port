@@ -1,7 +1,7 @@
 # $FreeBSD$
 
 PORTNAME=	accessd
-DISTVERSION=	1.0.0
+DISTVERSION=	2.0.0
 CATEGORIES=	security
 
 MAINTAINER=	cmusser@sonic.net
@@ -19,6 +19,7 @@ CARGO_CRATES=	ansi_term-0.9.0 \
 		bytes-0.4.4 \
 		cfg-if-0.1.2 \
 		clap-2.25.0 \
+		daemonize-0.3.0 \
 		data-encoding-1.2.0 \
 		futures-0.1.14 \
 		iovec-0.1.0 \
