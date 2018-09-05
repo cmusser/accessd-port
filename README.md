@@ -45,7 +45,7 @@ This is the BSD Ports system configuration project for accessd.
 5. If the Rust crates have never been defined, or have changed, get the
    configuration for them by doing the following:
    ```
-   make cargo-crates
+   sudo make cargo-crates
    ```
 
    Paste the result of this into the Makefile.

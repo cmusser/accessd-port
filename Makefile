@@ -1,7 +1,7 @@
 # $FreeBSD$
 
 PORTNAME=	accessd
-DISTVERSION=	2.0.0
+DISTVERSION=	2.0.1
 CATEGORIES=	security
 
 MAINTAINER=	cmusser@sonic.net
