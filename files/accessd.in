@@ -14,8 +14,10 @@ load_rc_config $name
 
 : ${accessd_enable="NO"}
 : ${accessd_pidfile="/var/run/${name}.pid"}
+: ${accessd_script="/usr/local/bin/ipfw-ssh.sh"}
 
 command="/usr/local/bin/${name}"
+command_args="${accessd_script}"
 pidfile="${accessd_pidfile}"
 
 run_rc_command $*

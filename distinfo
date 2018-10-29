@@ -1,4 +1,4 @@
-TIMESTAMP = 1536111784
+TIMESTAMP = 1540661141
 SHA256 (rust/crates/ansi_term-0.9.0.tar.gz) = 23ac7c30002a5accbf7e8987d0632fa6de155b7c3d39d0067317a391e00a2ef6
 SIZE (rust/crates/ansi_term-0.9.0.tar.gz) = 11718
 SHA256 (rust/crates/atty-0.2.2.tar.gz) = d912da0db7fa85514874458ca3651fe2cddace8d0b0505571dbdcd41ab490159
@@ -103,5 +103,5 @@ SHA256 (rust/crates/ws2_32-sys-0.2.1.tar.gz) = d59cefebd0c892fa2dd6de581e937301d
 SIZE (rust/crates/ws2_32-sys-0.2.1.tar.gz) = 4697
 SHA256 (rust/crates/yaml-rust-0.3.5.tar.gz) = e66366e18dc58b46801afbf2ca7661a9f59cc8c5962c29892b6039b4f86fa992
 SIZE (rust/crates/yaml-rust-0.3.5.tar.gz) = 42087
-SHA256 (cmusser-accessd-2.0.1_GH0.tar.gz) = 64addc830771bfc2d1fb4a9776b9f1bb619bf48e376247dcbfd069d5f6b3f15c
-SIZE (cmusser-accessd-2.0.1_GH0.tar.gz) = 15785
+SHA256 (cmusser-accessd-2.0.2_GH0.tar.gz) = 99d35b1d304ee67685ac18fd6415fc5718862c551e1e7266a412104090465083
+SIZE (cmusser-accessd-2.0.2_GH0.tar.gz) = 15775

@@ -1,7 +1,7 @@
 # $FreeBSD$
 
 PORTNAME=	accessd
-DISTVERSION=	2.0.1
+DISTVERSION=	2.0.2
 CATEGORIES=	security
 
 MAINTAINER=	cmusser@sonic.net
@@ -66,3 +66,4 @@ CARGO_CRATES=	ansi_term-0.9.0 \
 		yaml-rust-0.3.5
 
 .include <bsd.port.mk>
+
