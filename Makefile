@@ -65,5 +65,8 @@ CARGO_CRATES=	ansi_term-0.9.0 \
 		ws2_32-sys-0.2.1 \
 		yaml-rust-0.3.5
 
+post-install:
+	${INSTALL_SCRIPT} ${WRKSRC}/ipfw-ssh.sh ${STAGEDIR}${PREFIX}/bin
+
 .include <bsd.port.mk>
 
