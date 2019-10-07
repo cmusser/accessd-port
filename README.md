@@ -51,9 +51,10 @@ This is the BSD Ports system configuration project for accessd.
    Paste the result of this into the Makefile.
    
 6. Regenerate the `distinfo` file:
+   ```
+   sudo make makesum
+   ```
 
-	`sudo make makesum`
-   
 7. Go through package building steps (these are taken from the FreeBSD
    Porters Handbook):
 
@@ -67,5 +68,5 @@ This is the BSD Ports system configuration project for accessd.
    ```
 8. Install the built package:
    ```
-   sudo pkg install /usr/obj/dports/src/accessd-port/pkg/accessd-3.0.1.txz
+   sudo pkg install /usr/obj/dports/src/accessd-port/pkg/accessd-3.0.2.txz
    ```
