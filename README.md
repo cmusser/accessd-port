@@ -68,5 +68,5 @@ This is the BSD Ports system configuration project for accessd.
    ```
 8. Install the built package:
    ```
-   sudo pkg install /usr/obj/dports/src/accessd-port/pkg/accessd-3.0.2.txz
+   sudo pkg install /usr/obj/dports/src/accessd-port/pkg/accessd-3.0.3.txz
    ```
